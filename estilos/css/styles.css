@@ -1,0 +1,204 @@
+*{
+    box-sizing: border-box;
+}
+
+
+h1{ font-size: 3,5em;} 
+h2{ font-size: 2,5em;}
+h3{ font-size: 2em;}
+h4{ font-size: 1,5em;}
+p{ font-size: 1em;}
+ul{ list-style: none;}
+
+body{
+    margin:0;
+    font-family: sans-serif;
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+}
+
+.indexheader{
+    background-color: rgb(245, 245, 245);
+    height: 80px;
+    font-size: 10px;
+    margin: 0;   
+    padding: 0px 20px; 
+}
+
+.img-header{
+    display: flex;
+    height: 80px;
+    font-size: 11px;
+}
+
+
+.container-index{
+    
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    padding: 0px 0px;
+    flex-direction: column;
+    font-size: 10px;
+    
+}
+
+
+
+.img-header{
+    margin:0;
+    padding: 10px 10px;
+    font-size: 9px;
+}
+
+.opciones{
+    background-color: rgb(0, 0, 70);
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.opciones li a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0px 40px;
+    display: block;
+}
+
+.opciones li {
+    display: inline-block;
+    text-align: center;
+}
+
+.opciones li a:hover{
+    color: orange;
+}
+
+#hero{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.35),
+        rgba(0,0,0,0.95)
+    )
+    ,url(./fachada_css.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#niveles{
+    text-align: center;
+    padding: 50px 12px;
+}
+
+#niveles.container{
+    text-align: center;
+    }
+
+.color-distinto{
+    color: orangered;
+}
+
+#valores{
+    text-align: center;
+    background-color:  rgb(0, 0, 70);
+    color: white;
+}
+
+#valores.container{
+    padding: 150px 20px;
+
+}
+
+#valores h2{
+    margin-top: 20px;
+    font-size: 3,5em;
+}
+
+
+#valores.carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 1000px;
+    margin: 30px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://sonriemama.com/wp-content/uploads/2019/11/ensenar-respeto-ninos.jpg");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://www.chiquipedia.com/imagenes/los-10-mejores-juegos-de-confianza-para-ninos.jpg");   
+}
+
+.carta:last-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://diocesanos.es/blogs/orientapvi/wp-content/uploads/sites/16/2015/03/148198776.jpg");
+}
+
+#frase{
+    color: orangered;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina{
+    background-color: rgb(180, 180, 180);
+    width: 100%;
+}
+
+.container-foot{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    padding: 0px 0px;
+    flex-direction: column;
+    text-align: center;
+    font-size: 10px;
+}
+
+.container-foot2{
+    background-color: rgb(158, 158, 158);
+    padding: 5px 10px;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+    font-size: 9px;
+}

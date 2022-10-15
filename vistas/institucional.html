@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institucional</title>
+    <link rel="stylesheet" href="../estilos/css/styles.css">
+    <link rel="shortcut icon" href="../imagenes/Logo chico.png" type="image/x-icon">
+</head>
+<body>
+    <header class="indexheader"> 
+        <div class="container-index">
+            <div class="img-header">
+                <img class="indexheader__logo" src="../imagenes/Logo chico.png" alt="Logo del instituto">
+                <h2 class="indexlogotit"> Instituto <br>Aires del Sur</h2>
+            </div>    
+            <div class="infoheader">
+                <h4 class="indexheader__opciones">Telefono 11-5843-0333</h4>
+            </div>
+            <div class="infoheader">
+                <h4 class="indexheader__opciones">Correo electrónico: institutoairesdelsur@parada.com.ar</h4>
+            </div>    
+            <div class="infoheader">
+                <h4 class="indexheader__opciones">Ubicacion: Canale 453, San Vicente, Buenos Aires</h4  >
+            </div>
+        </div>               
+    </header>
+    <nav class="opciones">
+        <div class="container">
+            <ul class="opciones"> <!--ENLACE RELATIVO-->
+                <li class="opciones__boton"><a href="../index2.html">Inicio</a></li> <!--AJUSTO LA RUTA PARA QUE ME LLEVE A INICIO, VA CON ../ YA QUE SALGO DE LA CARPETA DONDE ESTOY (VISTA)-->
+                <li class="opciones__boton"><a href="#">Institucional</a></li> 
+                <li class="opciones__boton"><a href="./academico.html">Académico</a></li>
+                <li class="opciones__boton"><a href="./nosotros.html">Nosotros</a></li>
+                <li class="opciones__boton"><a href="./formulario.html">Pre Inscripción</a></li> <!--PONGO # YA QUE YA ME ENCUENTRO EN FORMULARIO-->
+                <li class="opciones__boton"><a href="./airesathleticclub.html">Aires Athletic Club</a></li>
+            </ul>
+        </div>
+    </nav>
+    </header>    
+    <main>
+        <section>
+            <div>
+                <h2>Nuestro proyecto</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/gsX37nv1nwk" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                picture-in-picture" allowfullscreen></iframe>
+                <!--EL IFRAME NOS PERMITE METER UN DOCUMENTO DENTRO DE OTRO DOCUMENTO, EN UNA ESTRUCTURA DE HTML, POR
+                    EJ UN VIDEO/AUDIO EN NUESTRO HTML, Y PODEMOS COPIAR EL CODIGO DESDE UN VIDEO DE YOUTUBE, APRETANDO
+                EN COMPARTIR E INSERTAR-->
+                <!--TAMBIEN PUEDO SUBIR UN VIDEO QUE TENGA EN MI SERVIDOR, VIDEO SRC="../XXX" CONTROLS (CONTROLS ES UN
+                    ATRIBUTO QUE SIRVE PARA DARLE TODOS LOS CONTROLES AL USUARIO, ES INTERACTIVO) OTRO EJ PUEDO CAMBIAR VIDEO POR AUDIO-->
+            </div>    
+        </section>
+        <hr>
+        
+        <div>
+            <ul>
+                <strong>Grupo docente:</strong> <!--negrita-->
+                <li>Jorgelina Parada: Matematica</li>
+                <li>Santiago Pereyra Caino: Prácticas del Lenguaje</li> <!--Si escribo li*Xnum me despliega Xnum de renglones-->
+                <li>Lucas Leguizamon: Educación Física</li>
+                <li>Leandro Vidal: Informática</li>
+                <li>Juan Manuel Santoro: Música</li>
+                <li>Candela Caino: Psicopedagoga</li>
+                <li>Francisco Caminoa: Director</li>
+            </ul>
+            <!--LISTAS ORDENADAS-->
+            <ol>
+                <strong>Horarios de clases</strong>
+                <li>Matematica 7:00hs a 9:00hs</li>
+                <li>Practica del lenguaje 9:00hs a 11:00hs</li>
+                <li>Informatica 11:00hs a 13:00hs</li>
+            </ol>
+        </div>
+        <hr> <!--LINEA QUE ATRAVIESA LA HOJA-->
+        <div> Aqui podran ver los horarios de escolaridad de los alumnos y alumnas de primer grado:</div>
+            <table border="2" cellspacing="0" cellpadding="10"> <!--TABLA, BORDE, ESPACIO ENTRE CELDAS, ESPACIO INTERNO DE CELDA-->
+
+                <th>           </th>
+                <th>7:00 a 9:00</th> <!--COLUMNAS-->
+                <th>9:00 a 9:30</th>
+                <th>9:30 a 11:00</th>
+                <th>11:00 a 11:30</th>
+                <th>11:30 a 13:00</th>
+
+                <tr> <!--FILAS-->
+                    <td>Lunes</td> <!--CONTENIDO EN CELDAS-->
+                    <td>Matematica</td>
+                    <td>Recreo</td>
+                    <td>Musica</td>
+                    <td>Recreo</td>
+                    <td>Practica del lenguaje</td>
+                </tr>
+                <tr>
+                    <td>Martes</td> 
+                    <td>Matematica</td>
+                    <td>Recreo</td>
+                    <td>Informatica</td>
+                    <td>Recreo</td>
+                    <td>Practica del lenguaje</td>
+                </tr>
+                <tr>
+                    <td>Miercoles</td> 
+                    <td>Matematica</td>
+                    <td>Recreo</td>
+                    <td>Educacion fisica</td>
+                    <td>Recreo</td>
+                    <td>Practica del lenguaje</td>
+                </tr>
+                <tr>
+                    <td>Jueves</td> 
+                    <td>Matematica</td>
+                    <td>Recreo</td>
+                    <td>Taller de plastica</td>
+                    <td>Recreo</td>
+                    <td>Practica del lenguaje</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td> 
+                    <td>Matematica</td>
+                    <td>Recreo</td>
+                    <td>Educacion fisica</td>
+                    <td>Recreo</td>
+                    <td>Practica del lenguaje</td>
+                </tr>               
+            </table>
+        </div>         
+    </main>
+    
+    <footer class="pie-pagina">
+        <div class="container-foot">
+            <div class="infofooter">
+                <h4>Seguinos:</h4>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-youtube"></a>       
+                </div>
+            </div>
+            <div class="infofooter">
+                <h4>Phone: </h4>
+                <p>11-5843-0333</p>
+            </div>
+            <div class="infofooter">
+                <h4>Email: </h4>
+                <p>institutoairesdelsur@gmail.com</p>
+            </div>
+            <div class="infofooter">
+                <h4>Ubicación: </h4>
+                <p>Canale 453, San Vicente, Buenos Aires</p>
+            </div>
+        </div>
+        <div class="container-foot2">
+            <div class="infofooter2">
+                <p>&copy; Instituto Aires del Sur | Buenos Aires, Argentina</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

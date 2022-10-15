@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de inscripcion</title>
+    <link rel="stylesheet" href="../estilos/css/styles.css">
+    <link rel="shortcut icon" href="../imagenes/Logo chico.png" type="image/x-icon">
+</head>
+<body>
+    <header class="indexheader"> 
+        <div class="container-index">
+            <div class="img-header">
+                <img class="indexheader__logo" src="../imagenes/Logo chico.png" alt="Logo del instituto">
+                <h2 class="indexlogotit"> Instituto <br>Aires del Sur</h2>
+            </div>    
+            <div class="infoheader">
+                <h4 class="indexheader__opciones">Telefono 11-5843-0333</h4>
+            </div>
+            <div class="infoheader">
+                <h4 class="indexheader__opciones">Correo electrónico: institutoairesdelsur@parada.com.ar</h4>
+            </div>    
+            <div class="infoheader">
+                <h4 class="indexheader__opciones">Ubicacion: Canale 453, San Vicente, Buenos Aires</h4  >
+            </div>
+        </div>               
+    </header>
+    <nav class="opciones">
+        <div class="container">
+            <ul class="opciones"> <!--ENLACE RELATIVO-->
+                <li class="opciones__boton"><a href="../index2.html">Inicio</a></li> <!--AJUSTO LA RUTA PARA QUE ME LLEVE A INICIO, VA CON ../ YA QUE SALGO DE LA CARPETA DONDE ESTOY (VISTA)-->
+                <li class="opciones__boton"><a href="./institucional.html">Institucional</a></li> 
+                <li class="opciones__boton"><a href="./academico.html">Académico</a></li>
+                <li class="opciones__boton"><a href="./nosotros.html">Nosotros</a></li>
+                <li class="opciones__boton"><a href="#">Pre Inscripción</a></li> <!--PONGO # YA QUE YA ME ENCUENTRO EN FORMULARIO-->
+                <li class="opciones__boton"><a href="./airesathleticclub.html">Aires Athletic Club</a></li>
+            </ul>
+        </div>    
+    </nav>    
+    </header>        
+    
+    <hr>
+
+    <form action="" method="GET" enctype="text/plain"></form> <!--COMO UTILCE EL METODO GET, SIGNIFICA QUE TODA LA INFO DEL FORMULARIO CUANDO SE ENVIA, VA A VIAJAR POR EL NAVEGADOR-->
+    <fieldset>
+        <legend>Informacion Personal del niño/a</legend>
+
+    <div>
+        <label for="name"><strong>Nombre y apellido</strong></label>
+        <input type="text" name="name" id="name" require placeholder="Introduzca nombre y apellido"> <!-- LOS ATRIBUTOS "NAME" Y "ID" DEBEN TENER EL MISMO VALOR QUE EL "FOR", DE ESTA FORMA EL USUARIO SI HACE CLICK EN NOMBRE NO SOMBREA Y DIRECTAMENTE LO HACE COMPLETAR EL CAMPO-->
+    </div>
+
+    <div>
+        <label for="age"><strong>Edad</strong></label>
+        <input type="number" name="age" id="age" min="5" max="12"> <!--EL VALOR QUE VIAJE A LA BASE DE DATOS ES EL ID-->
+    </div>
+
+    <div>
+        <label for="date"><strong>Fecha de Nacimiento</strong></label>
+        <input type="date" name="date" id="date" min="2017-01-01">
+    </div>
+
+    <div>
+        <strong>Deporte Favorito</strong>
+        <div>
+            <label for="futbol">Futbol</label>
+            <input type="checkbox" name="futbol" id="futbol">
+        </div>
+        <div>
+            <label for="handball">Handball</label>
+            <input type="checkbox" name="handball" id="handball">
+        </div>
+        <div>
+            <label for="basketball">Basketball</label>
+            <input type="checkbox" name="basketball" id="basketball">
+        </div>
+        <div>
+            <label for="patin">Patin</label>
+            <input type="checkbox" name="patin" id="patin">
+        </div>    
+    </div>
+
+    <div>
+        <strong>Genero</strong>
+        <div>
+            <label for="male">Masculino</label>
+            <input type="radio" name="gender" id="male" value="male"> <!--RADIO SIRVE PARA QUE SOLO PUEDA SELECCIONARSE UNA OPCION. EL VALOR QUE VIAJA A LA BASE DE DATOS NO ES EL ID, SINO EL VALOR-->
+        </div>
+        <div>
+            <label for="female">Femenino</label>
+            <input type="radio" name="gender" id="female" value="female"> 
+        </div>
+    </div>
+
+    <div>
+        <label for="grado"><strong>Grado a ingresar</strong></label>
+        <select name="grado" id="grado">
+            <option value="first">Primer Grado</option>
+            <option value="second">Segundo Grado</option>
+            <option value="third">Tercer Grado</option>
+            <option value="fourth">Cuarto Grado</option>
+            <option value="fifth">Quinto Grado</option>
+            <option value="sixth">Sexto Grado</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="file"><strong>Foto Carnet</strong></label>
+        <input type="file" name="file" id="file">
+    </div>
+
+    <div>
+        <label for="bio"><strong>Presentación</strong></label>
+        <textarea name="bio" id="bio"></textarea> <!-- PUEDO PONER UN FIJO DE COLUMNAS (COL) Y FILAS(ROW)-->
+    </div>
+
+    </fieldset>
+    <fieldset>
+        <legend>Información Adicional</legend>
+
+    <div>
+        <label for="name"><strong>Nombre y apellido de Padre/Madre/Tutor</strong></label>
+        <input type="text" name="name" id="name" require placeholder="Introduzca nombre y apellido"> <!-- LOS ATRIBUTOS "NAME" Y "ID" DEBEN TENER EL MISMO VALOR QUE EL "FOR", DE ESTA FORMA EL USUARIO SI HACE CLICK EN NOMBRE NO SOMBREA Y DIRECTAMENTE LO HACE COMPLETAR EL CAMPO-->
+    </div>    
+    
+    <div>
+        <label for="phone"><strong>Telefono</strong></label>
+        <input type="tel" name="phone" id="phone"> <!--SOLO PERMITE INGRESAR UN TELEFONO-->
+    </div>
+
+    <div>
+        <label for="email"><strong>Email</strong></label>
+        <input type="email" name="email" id="email" required> <!--EN TYPE VA EMAIL Y NO TEXTO PARA QUE EL FORMU RECONOZCA QUE SE ESTA INTRODUCIENDO UN EMAIL VALIDO (@HOT..) Y LINEA REQUERIDA --> 
+    </div>    
+
+    <div>
+        <label for="password"></label><strong>Contraseña</strong></label>
+        <input type="password" name="password" id="password"> <!--CON EL ATRIBUTO PASSWORD YA RECONOCE Y NO MUESTRA LO QUE ESCRIBIS EN EL FORMULARIO-->
+    </div>
+    </fieldset>
+    
+    <div>
+        <input type="reset" value="Reiniciar Formulario">
+        <input type="submit" value="Enviar Formulario">
+    </div>
+
+    <footer class="pie-pagina">
+        <div class="container-foot">
+            <div class="infofooter">
+                <h4>Seguinos:</h4>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-youtube"></a>       
+                </div>
+            </div>
+            <div class="infofooter">
+                <h4>Phone: </h4>
+                <p>11-5843-0333</p>
+            </div>
+            <div class="infofooter">
+                <h4>Email: </h4>
+                <p>institutoairesdelsur@gmail.com</p>
+            </div>
+            <div class="infofooter">
+                <h4>Ubicación: </h4>
+                <p>Canale 453, San Vicente, Buenos Aires</p>
+            </div>
+        </div>
+        <div class="container-foot2">
+            <div class="infofooter2">
+                <p>&copy; Instituto Aires del Sur | Buenos Aires, Argentina</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
