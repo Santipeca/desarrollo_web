@@ -3,17 +3,20 @@
 }
 
 
-h1{ font-size: 3,5em;} 
-h2{ font-size: 2,5em;}
-h3{ font-size: 2,2em;}
-h4{ font-size: 1,5em;}
-p{ font-size: 1em;}
-ul{ list-style: none;}
+/*h1{ font-size: 3.5em;} 
+h2{ font-size: 2.5em;}
+h3{ font-size: 2.2em;}
+h4{ font-size: 1.5em;}
+p{ font-size: 1.2em;}
+ul{ list-style: none;}*/
 
 body{
     margin:0;
+    padding: 0;
     font-family: sans-serif;
 }
+
+/*INDEX2*/
 
 .container{
     max-width: 1300px;
@@ -23,7 +26,6 @@ body{
 .indexheader{
     background-color: rgb(245, 245, 245);
     height: 80px;
-    font-size: 10px;
     margin: 0;   
     padding: 0px 20px; 
 }
@@ -31,12 +33,11 @@ body{
 .img-header{
     display: flex;
     height: 80px;
-    font-size: 11px;
+    font-size: 9px;
+    padding: 10px 10px;
 }
 
-
 .container-index{
-    
     margin: auto;
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -44,16 +45,8 @@ body{
     padding: 0px 0px;
     flex-direction: column;
     font-size: 10px;
-    
 }
 
-
-
-.img-header{
-    margin:0;
-    padding: 10px 10px;
-    font-size: 9px;
-}
 
 .opciones{
     background-color: rgb(0, 0, 70);
@@ -83,7 +76,7 @@ body{
 }
 
 #hero{
-    font-size: 1.5rem;
+    font-size: 1.5em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -104,15 +97,51 @@ body{
 
 #niveles{
     text-align: center;
-    padding: 50px 12px;
+    padding: 10px 10px;
+    display: flex
+}
+.container_niveles2 h2{
+    
+    font-size: 6em;
+}
+.container_niveles2 h3{
+    
+    font-size: 4em;
 }
 
-#niveles.container{
+.container_niveles{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    padding: 0px 0px;
+    flex-direction: column;
     text-align: center;
-    }
+    font-size: 10px;
+}
+
+.imagen_ninos{
+    height: 800px;
+
+}
+
+.container_niveles2{
+    margin: auto;
+}
 
 .color-distinto{
     color: orangered;
+}
+.container_niveles2 h2{
+    margin-top: 0;
+}
+
+.nivelesh3{
+    font-size: 2.5em;
+}
+
+.detallenivel{
+    font-size: 1.2em;
 }
 
 #valores{
@@ -121,22 +150,23 @@ body{
     color: white;
 }
 
-#valores.container{
-    padding: 150px 20px;
-
+.nuestros_valores{
+    font-size: 2em;
+}
+.container_valores{
+    padding: 20px 0px;
 }
 
-#valores h2{
-    margin-top: 20px;
-    font-size: 3,5em;
+.maestro_cartas{
+    display: flex;
+    justify-content: center;
 }
 
-
-#valores.carta{
+.carta{
     background-position: center center;
     background-size: cover;
-    padding: 1000px;
-    margin: 30px;
+    padding: 50px;
+    margin: 15px;
     border-radius: 15px;
     background-repeat: no-repeat;
 
@@ -171,11 +201,21 @@ body{
 
 #frase{
     color: orangered;
+    font-style: italic;
     background-color: rgb(245, 245, 245);
-    display: flex;
+    margin: 0px;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+}
+
+.container_frase1 h4{
+    padding-left: 50px;
+    font-size: medium;
+}
+
+.container_frase2 h4{
+    padding-left: 1250px;
+    font-size: small;
 }
 
 .pie-pagina{
@@ -202,3 +242,180 @@ body{
     font-weight: bold;
     font-size: 9px;
 }
+
+
+/*INSTITUCIONAL*/
+
+
+.galeria_title{
+    text-align: center;
+    font-size: 3rem;
+    padding: 0,8em 1em;
+
+}
+
+.img-inst{
+    width: 100%;
+}
+
+.maestro_imagenes{
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+    
+}
+
+.columnaimg{
+    flex: 20%;
+    padding: 5px;
+}
+
+.columnaimg img{
+    margin-top: 5px;
+}
+
+/*NOSOTROS*/
+
+#quienessomos{
+    text-align: center;
+    padding: 10px 10px;
+    display: flex;
+    background-color: rgb(240, 228, 228);
+
+}
+
+.h2_historia{
+    color: orangered;
+    font-size: 3em;
+}
+
+.parrafo_historia{
+    font-size: 1.2em;
+}
+
+.container_quienessomos{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    padding: 0px 0px;
+    flex-direction: column;
+    text-align: center;
+    font-size: 10px;
+}
+
+.container_historia{
+    margin: auto;
+}
+
+.container_historia h2{
+    margin-top: 0;
+}
+.container_historiadetalle{
+    padding-top: 30px;
+}
+
+.img-quienessomos{
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.img-quienessomos::before{
+    content: "Familia Fundadora";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #5b40f3a6;
+    transform: scale(0);
+    transition: transform .4s;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+
+  
+}
+
+.img-quienessomos:hover::before{
+    transform: scale(1) rotate(360deg);
+}
+
+/*RESPONSIVE CELU*/
+
+@media (max-width: 320px){
+
+/*INICIO*/
+    .infoheader{
+        display: none;
+    }
+    .container_niveles{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container_ninos{
+        display: none;
+    }
+    
+    .maestro_cartas{
+        display:inline-block;
+    }
+    .maestro_cartas p{
+        display: none;
+    }
+
+    .container-foot{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+/*INSTITUCIONAL*/
+
+    .columnaimg{
+        flex: 100%
+    }
+
+/*NOSOTROS*/
+    .container_quienessomos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px){
+
+/*INICIO*/
+    .container_niveles{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container_ninos{
+        display: none;
+    }
+    .maestro_cartas{
+        display: contents
+    }
+
+/*INSTITUCIONAL*/
+
+.columnaimg{
+    flex: 50%;
+}
+
+/*NOSOTROS*/
+    .container_quienessomos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }   
+}
+
