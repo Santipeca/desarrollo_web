@@ -1,0 +1,16 @@
+{
+  "name": "paquete_desarrollo_web",
+  "version": "1.0.0",
+  "description": "Un paquete de sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss sass_node/main.scss estilos/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Santiago Pereyra Caino",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
